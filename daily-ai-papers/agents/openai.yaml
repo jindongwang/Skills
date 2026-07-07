@@ -1,0 +1,4 @@
+interface:
+  display_name: "Daily AI Papers"
+  short_description: "Find and publish daily AI papers."
+  default_prompt: "Use $daily-ai-papers to produce today's AI papers report and publish it to Notion and Slack."
