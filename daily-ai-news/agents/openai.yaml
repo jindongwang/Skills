@@ -1,0 +1,4 @@
+interface:
+  display_name: "Daily AI News"
+  short_description: "Publish bilingual daily AI news digests"
+  default_prompt: "Use $daily-ai-news to produce and publish today's bilingual AI news digest."
