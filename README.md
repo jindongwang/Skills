@@ -9,11 +9,21 @@ Portable Codex skills.
 
 ## Install on a new machine
 
-Copy a skill folder into your Codex skills directory:
+Copy a skill folder into your Codex skills directory.
+
+Windows PowerShell:
 
 ```powershell
 Copy-Item -Recurse .\daily-ai-news "$env:USERPROFILE\.codex\skills\daily-ai-news"
 Copy-Item -Recurse .\daily-ai-papers "$env:USERPROFILE\.codex\skills\daily-ai-papers"
+```
+
+macOS or Linux:
+
+```bash
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
+cp -R ./daily-ai-news "${CODEX_HOME:-$HOME/.codex}/skills/daily-ai-news"
+cp -R ./daily-ai-papers "${CODEX_HOME:-$HOME/.codex}/skills/daily-ai-papers"
 ```
 
 Restart Codex or start a new Codex thread so the skill can be discovered.
